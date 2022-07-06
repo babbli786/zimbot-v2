@@ -183,7 +183,7 @@ ZimBotInc.ev.on('group-participants.update', async (anu) => {
             id,
             name: 'WhatsApp'
         } : id === ZimBotInc.decodeJid(ZimBotInc.user.id) ?
-            ZimBotInc.user :
+            ZimBotInc.user : Mahi Brothers
             (store.contacts[id] || {})
             return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
     }
